@@ -1,0 +1,226 @@
+
+@import "variables";
+
+.form-signin
+{
+    max-width: 330px;
+    padding: 15px;
+    margin: 0 auto;
+}
+.form-signin .form-signin-heading, .form-signin .checkbox
+{
+    margin-bottom: 10px;
+}
+.form-signin .checkbox
+{
+    font-weight: normal;
+}
+.form-signin .form-control
+{
+    position: relative;
+    font-size: 16px;
+    height: auto;
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.form-signin .form-control:focus
+{
+    z-index: 2;
+}
+.form-signin input[type="text"]
+{
+    margin-bottom: -1px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.form-signin input[type="password"]
+{
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.form-control {
+    outline: 0;
+    border-color: #ECECEC;
+    border-style: solid;
+    border-width: 1px;
+    width: 95%;
+    background-color: #ffffff;
+    padding: 6px;
+    border-radius: 2px;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.angucomplete-holder {
+    position: relative;
+}
+
+.angucomplete-dropdown {
+    border-color: #ececec;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 2px;
+    width: 250px;
+    padding: 6px;
+    cursor: pointer;
+    z-index: 9999;
+    position: absolute;
+    /*top: 32px;
+    left: 0px;
+    */
+    margin-top: -6px;
+    background-color: #ffffff;
+}
+
+.angucomplete-searching {
+    color: #acacac;
+    font-size: 14px;
+}
+
+.angucomplete-description {
+    font-size: 14px;
+}
+
+.angucomplete-row {
+    padding: 5px;
+    color: #000000;
+    margin-bottom: 4px;
+
+}
+
+.angucomplete-selected-row, .angucomplete-row:hover {
+    background-color: lightblue;
+    color: #ffffff;
+}
+
+.angucomplete-image-holder {
+    padding-top: 2px;
+    float: left;
+    margin-right: 10px;
+    margin-left: 5px;
+}
+
+.angucomplete-image {
+    height: 34px;
+    width: 34px;
+    border-radius: 50%;
+    border-color: #ececec;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.angucomplete-image-default {
+    /* Add your own default image here
+     background-image: url('/assets/default.png');
+    */
+    background-position: center;
+    background-size: contain;
+    height: 34px;
+    width: 34px;
+}
+
+
+
+nav.sidebar, .main{
+  -webkit-transition: margin 200ms ease-out;
+  -moz-transition: margin 200ms ease-out;
+  -o-transition: margin 200ms ease-out;
+  transition: margin 200ms ease-out;
+}
+
+@media (min-width: 765px) {
+
+  nav.sidebar:hover + .main{
+    margin-left: 200px;
+  }
+
+  nav.sidebar.navbar.sidebar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+    margin-left: 0px;
+  }
+
+  nav.sidebar .navbar-brand, nav.sidebar .navbar-header{
+    text-align: center;
+    width: 100%;
+    margin-left: 0px;
+  }
+
+  nav.sidebar a{
+    padding-right: 13px;
+  }
+
+  nav.sidebar .navbar-nav > li:first-child{
+    border-top: 1px #e5e5e5 solid;
+  }
+
+  nav.sidebar .navbar-nav > li{
+    border-bottom: 1px #e5e5e5 solid;
+  }
+
+  nav.sidebar .navbar-nav .open .dropdown-menu {
+    position: static;
+    float: none;
+    width: auto;
+    margin-top: 0;
+    background-color: transparent;
+    border: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+  nav.sidebar .navbar-collapse, nav.sidebar .container-fluid{
+    padding: 0 0px 0 0px;
+  }
+
+  .navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
+    color: #777;
+  }
+
+  nav.sidebar{
+    width: 200px;
+    height: 100%;
+    margin-left: -160px;
+    float: left;
+    margin-bottom: 0px;
+  }
+
+  nav.sidebar li {
+    width: 100%;
+  }
+
+  nav.sidebar:hover{
+    margin-left: 0px;
+  }
+
+  .forAnimate{
+    opacity: 0;
+  }
+}
+
+@media (min-width: 1330px) {
+  .main{
+    width: calc(100% - 200px);
+    margin-left: 200px;
+  }
+
+  nav.sidebar{
+    margin-left: 0px;
+    float: left;
+  }
+
+  nav.sidebar .forAnimate{
+    opacity: 1;
+  }
+}
+
+nav.sidebar .navbar-nav .open .dropdown-menu>li>a:hover, nav.sidebar .navbar-nav .open .dropdown-menu>li>a:focus {
+  color: #CCC;
+  background-color: transparent;
+}
+
+nav:hover .forAnimate{
+  opacity: 1;
+}
